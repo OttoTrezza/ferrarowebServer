@@ -16,21 +16,21 @@ app.use(express.static(__dirname + '/public'));
 
 
 
-app.get('/', (req, res) => {
-    //  res.send('Hola Mundo');
+// app.get('/', (req, res) => {
+//     //  res.send('Hola Mundo');
 
-    res.render('home', {
-        nombre: 'Ignacio',
-        anio: new Date().getFullYear()
-    });
-});
+//     res.render('home', {
+//         nombre: 'Ignacio',
+//         anio: new Date().getFullYear()
+//     });
+// });
 // app.get('/about', (req, res) => {
-    //  res.send('Hola Mundo');
+//  res.send('Hola Mundo');
 
-   //  res.render('about', {
-      //   nombre: 'Ignacio',
-      //   anio: new Date().getFullYear()
-    // });
+//  res.render('about', {
+//   nombre: 'Ignacio',
+//   anio: new Date().getFullYear()
+// });
 // });
 
 app.listen(port, () => {
