@@ -15,9 +15,11 @@ app.use(express.static(__dirname + '/public'));
 // app.set('view engine', 'hbs');
 
 
-
-app.get('/', (req, res) => {
-    res.send('Hola Mundo');
+app.get('/', (req, res, next) => {
+    res.status(200).json({
+        ok: true,
+        mensaje: 'peticion realizada correctamente1'
+    });
 });
 // app.get('/about', (req, res) => {
 //  res.send('Hola Mundo');
