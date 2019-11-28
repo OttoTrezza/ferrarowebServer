@@ -16,14 +16,9 @@ app.use(express.static(__dirname + '/public'));
 
 
 
-// app.get('/', (req, res) => {
-//     //  res.send('Hola Mundo');
-
-//     res.render('home', {
-//         nombre: 'Ignacio',
-//         anio: new Date().getFullYear()
-//     });
-// });
+app.get('/', (req, res) => {
+    res.send('Hola Mundo');
+});
 // app.get('/about', (req, res) => {
 //  res.send('Hola Mundo');
 
