@@ -7,8 +7,8 @@ const hbs = require('hbs');
 const port = process.env.PORT || 80;
 
 
-app.use(express.static(__dirname + '/public'));
-// app.use('/public/', express.static('public/'));
+// app.use(express.static(__dirname + '/public'));
+app.use('/public/', express.static('public/'));
 // Express HBS eengine
 // hbs.registerPartials(__dirname + '/views/parciales');
 
